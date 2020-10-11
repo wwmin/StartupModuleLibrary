@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ModuleLibrary;
+using StartupModuleSimple;
 
-namespace startupModules
+namespace StartupModules.Web
 {
     public class Program
     {
@@ -19,7 +19,6 @@ namespace startupModules
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartupModules(x => x.Settings["AddHangfire"] = true).UseStartup<Startup>();

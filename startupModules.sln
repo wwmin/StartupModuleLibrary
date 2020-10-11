@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "startupModules", "startupModules\startupModules.csproj", "{624341C2-08DE-42CD-888E-C357DA93C298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModuleSimple", "StartupModuleSimple\StartupModuleSimple.csproj", "{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleLibrary", "ModuleLibrary\ModuleLibrary.csproj", "{ECDB0D15-2467-46AF-B3EA-D49E047E151C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.Web", "StartupModules.Web\StartupModules.Web.csproj", "{2CBF4F78-56AF-4449-B18D-78094B361CFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.xUnit", "StartupModules.xUnit\StartupModules.xUnit.csproj", "{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{43B93CD6-CB6F-485D-BE72-1BD283A458EB}"
+	ProjectSection(SolutionItems) = preProject
+		.appveyor.yml = .appveyor.yml
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +23,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{624341C2-08DE-42CD-888E-C357DA93C298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{624341C2-08DE-42CD-888E-C357DA93C298}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{624341C2-08DE-42CD-888E-C357DA93C298}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{624341C2-08DE-42CD-888E-C357DA93C298}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECDB0D15-2467-46AF-B3EA-D49E047E151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECDB0D15-2467-46AF-B3EA-D49E047E151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECDB0D15-2467-46AF-B3EA-D49E047E151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECDB0D15-2467-46AF-B3EA-D49E047E151C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBF4F78-56AF-4449-B18D-78094B361CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBF4F78-56AF-4449-B18D-78094B361CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBF4F78-56AF-4449-B18D-78094B361CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBF4F78-56AF-4449-B18D-78094B361CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5F69D539-36FC-4D3E-AA4E-68F357966D94}
+		SolutionGuid = {80053C59-A72F-4B8E-B815-CB271347A588}
 	EndGlobalSection
 EndGlobal
