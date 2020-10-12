@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModuleSimple", "StartupModuleSimple\StartupModuleSimple.csproj", "{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModuleSimple", "VersionOne\StartupModuleSimple\StartupModuleSimple.csproj", "{BD5A3B5D-7014-45B7-82E9-3495E464ACCF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.Web", "StartupModules.Web\StartupModules.Web.csproj", "{2CBF4F78-56AF-4449-B18D-78094B361CFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.Web", "VersionOne\StartupModules.Web\StartupModules.Web.csproj", "{2CBF4F78-56AF-4449-B18D-78094B361CFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.xUnit", "StartupModules.xUnit\StartupModules.xUnit.csproj", "{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupModules.xUnit", "VersionOne\StartupModules.xUnit\StartupModules.xUnit.csproj", "{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{43B93CD6-CB6F-485D-BE72-1BD283A458EB}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,6 +16,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		.travis.yml = .travis.yml
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VersionOne", "VersionOne", "{FF957AF3-8F5D-4758-B357-7917739B13AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VersionTwo", "VersionTwo", "{CC2D90A2-B2E9-435D-8709-2F23AA4C58BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartupModule.Libary", "VersionTwo\StartupModule.Libary\StartupModule.Libary.csproj", "{47BD05D2-C259-4E65-8C30-BD442F3A9297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartupModule.Web", "VersionTwo\StartupModule.Web\StartupModule.Web.csproj", "{D4BB75D4-2686-4F66-975F-18F019A3E72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartupModule.xUnit", "VersionTwo\StartupModule.xUnit\StartupModule.xUnit.csproj", "{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,9 +45,29 @@ Global
 		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BD05D2-C259-4E65-8C30-BD442F3A9297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BD05D2-C259-4E65-8C30-BD442F3A9297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BD05D2-C259-4E65-8C30-BD442F3A9297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BD05D2-C259-4E65-8C30-BD442F3A9297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4BB75D4-2686-4F66-975F-18F019A3E72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BB75D4-2686-4F66-975F-18F019A3E72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BB75D4-2686-4F66-975F-18F019A3E72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BB75D4-2686-4F66-975F-18F019A3E72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD5A3B5D-7014-45B7-82E9-3495E464ACCF} = {FF957AF3-8F5D-4758-B357-7917739B13AF}
+		{2CBF4F78-56AF-4449-B18D-78094B361CFA} = {FF957AF3-8F5D-4758-B357-7917739B13AF}
+		{32C3ABD5-D72F-4B8D-BCFB-3296F6500C24} = {FF957AF3-8F5D-4758-B357-7917739B13AF}
+		{47BD05D2-C259-4E65-8C30-BD442F3A9297} = {CC2D90A2-B2E9-435D-8709-2F23AA4C58BD}
+		{D4BB75D4-2686-4F66-975F-18F019A3E72E} = {CC2D90A2-B2E9-435D-8709-2F23AA4C58BD}
+		{AFFF71B3-92F2-43C5-8E9C-9946D4DFEE8D} = {CC2D90A2-B2E9-435D-8709-2F23AA4C58BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80053C59-A72F-4B8E-B815-CB271347A588}
